@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do App</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>My To-Do List</h1>
+
+        <!-- 📅 Date -->
+        <p id="todayDate"></p>
+        <input type="date" id="selectedDate">
+
+        <!-- ✅ Input + Button (Grouped) -->
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Enter a task">
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <!-- 📝 Notes -->
+        <textarea id="taskNote" placeholder="Add notes (optional)"></textarea>
+
+        <!-- 📋 Task List -->
+        <ul id="taskList"></ul>
+
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>

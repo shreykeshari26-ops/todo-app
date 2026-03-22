@@ -1,0 +1,149 @@
+/* 🌌 Background (Dark Black + Blue Glow) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+
+    background: radial-gradient(circle at top, #0f172a, #000000);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 💎 Glass Container (Black Transparent) */
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+    box-shadow: inset 0 0 20px rgba(255,255,255,0.02);
+
+    padding: 25px;
+    width: 380px;
+    border-radius: 18px;
+
+    border: 1px solid rgba(59, 130, 246, 0.2);
+
+    box-shadow: 
+        0 0 20px rgba(59, 130, 246, 0.2),
+        0 0 60px rgba(59, 130, 246, 0.1);
+
+    color: #e2e8f0;
+}
+
+/* 🧾 Title */
+h1 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* 📅 Date */
+#todayDate {
+    color: #60a5fa;
+    margin-bottom: 10px;
+}
+
+/* 📅 Date Picker */
+#selectedDate {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+
+    border-radius: 10px;
+    border: none;
+
+    background: rgba(255,255,255,0.05);
+    color: white;
+}
+
+/* 🔲 Input Group */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* ✏️ Input */
+.input-group input {
+    flex: 1;
+    padding: 12px;
+
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    background: rgba(255,255,255,0.08);
+    color: white;
+}
+
+/* 📝 Notes */
+textarea {
+    width: 100%;
+    height: 60px;
+
+    padding: 10px;
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.08);
+    color: white;
+
+    border: none;
+    resize: none;
+
+    margin-bottom: 10px;
+}
+
+/* 🔵 Add Button (Blue Accent) */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(135deg, #3b82f6, #0ea5e9);
+    color: white;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #3b82f6;
+}
+
+/* 📋 Task Item */
+li {
+    list-style: none;
+    margin: 10px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px;
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.05);
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+li:hover {
+    background: rgba(59, 130, 246, 0.1);
+}
+
+/* ✅ Completed */
+.completed {
+    text-decoration: line-through;
+    color: #64748b;
+}
+
+/* ❌ Delete Button */
+li button {
+    background: rgba(239, 68, 68, 0.2);
+    padding: 6px 10px;
+}
+
+li button:hover {
+    background: rgba(239, 68, 68, 0.5);
+}
